@@ -69,72 +69,6 @@ F 3 "http://www.ti.com/lit/gpn/sn7402" H 3350 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM339 U1
-U 1 1 605E8C8D
-P 2950 2950
-F 0 "U1" H 2950 3317 50  0000 C CNN
-F 1 "LM339" H 2950 3226 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 2900 3050 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 3000 3150 50  0001 C CNN
-	1    2950 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Comparator:LM339 U1
-U 2 1 605E91D7
-P 2950 3700
-F 0 "U1" H 2950 4067 50  0000 C CNN
-F 1 "LM339" H 2950 3976 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 2900 3800 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 3000 3900 50  0001 C CNN
-	2    2950 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Comparator:LM339 U1
-U 3 1 605EA1D7
-P 7050 2950
-F 0 "U1" H 7050 3317 50  0000 C CNN
-F 1 "LM339" H 7050 3226 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 7000 3050 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 7100 3150 50  0001 C CNN
-	3    7050 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Comparator:LM339 U1
-U 4 1 605EAA55
-P 7050 3700
-F 0 "U1" H 7050 4067 50  0000 C CNN
-F 1 "LM339" H 7050 3976 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 7000 3800 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 7100 3900 50  0001 C CNN
-	4    7050 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Comparator:LM339 U1
-U 5 1 605EB171
-P 4150 6400
-F 0 "U1" H 4108 6446 50  0000 L CNN
-F 1 "LM339" H 4108 6355 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 4100 6500 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 4200 6600 50  0001 C CNN
-	5    4150 6400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:BC546 Q1
-U 1 1 605EC241
-P 4600 3600
-F 0 "Q1" H 4791 3646 50  0000 L CNN
-F 1 "BC546" H 4791 3555 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4800 3525 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4600 3600 50  0001 L CNN
-	1    4600 3600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R3
 U 1 1 605EC9DA
 P 2250 2250
@@ -407,17 +341,6 @@ F 1 "GND" H 4055 6527 50  0000 C CNN
 F 2 "" H 4050 6700 50  0001 C CNN
 F 3 "" H 4050 6700 50  0001 C CNN
 	1    4050 6700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:BC546 Q2
-U 1 1 60644E3F
-P 8700 3600
-F 0 "Q2" H 8891 3646 50  0000 L CNN
-F 1 "BC546" H 8891 3555 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8900 3525 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 8700 3600 50  0001 L CNN
-	1    8700 3600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -721,5 +644,82 @@ F 2 "" H 1750 5150 50  0001 C CNN
 F 3 "" H 1750 5150 50  0001 C CNN
 	1    1750 5150
 	-1   0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:LM2902 U1
+U 1 1 605F6E50
+P 2950 3700
+F 0 "U1" H 2950 4067 50  0000 C CNN
+F 1 "LM2902" H 2950 3976 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2900 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 3000 3900 50  0001 C CNN
+	1    2950 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM2902 U1
+U 2 1 605F8407
+P 2950 2950
+F 0 "U1" H 2950 3317 50  0000 C CNN
+F 1 "LM2902" H 2950 3226 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2900 3050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 3000 3150 50  0001 C CNN
+	2    2950 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM2902 U1
+U 3 1 605F9DD5
+P 7050 2950
+F 0 "U1" H 7050 3317 50  0000 C CNN
+F 1 "LM2902" H 7050 3226 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7000 3050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 7100 3150 50  0001 C CNN
+	3    7050 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM2902 U1
+U 4 1 605FAEBE
+P 7050 3700
+F 0 "U1" H 7050 4067 50  0000 C CNN
+F 1 "LM2902" H 7050 3976 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7000 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 7100 3900 50  0001 C CNN
+	4    7050 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM2902 U1
+U 5 1 605FBE50
+P 4150 6400
+F 0 "U1" H 4108 6446 50  0000 L CNN
+F 1 "LM2902" H 4108 6355 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4100 6500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 4200 6600 50  0001 C CNN
+	5    4150 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BEC Q1
+U 1 1 60648F70
+P 4600 3600
+F 0 "Q1" H 4791 3646 50  0000 L CNN
+F 1 "BC847" H 4791 3555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70_Handsoldering" H 4800 3700 50  0001 C CNN
+F 3 "~" H 4600 3600 50  0001 C CNN
+	1    4600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BEC Q2
+U 1 1 60649B87
+P 8700 3600
+F 0 "Q2" H 8891 3646 50  0000 L CNN
+F 1 "BC847" H 8891 3555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70_Handsoldering" H 8900 3700 50  0001 C CNN
+F 3 "~" H 8700 3600 50  0001 C CNN
+	1    8700 3600
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
